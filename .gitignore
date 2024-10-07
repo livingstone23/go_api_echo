@@ -23,3 +23,10 @@ go.work.sum
 
 # env file
 .env
+
+#exclude the .env file
+!.env.example
+
+
+#exclude the file inside the folder public
+public/*

@@ -1,0 +1,2 @@
+# go_api_echo/handlers
+handlers\category.go:64:108: too few values in struct literal of type struct{Key string; Value interface{}}
