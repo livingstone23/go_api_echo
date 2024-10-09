@@ -40,6 +40,27 @@ func main() {
 	//Category routes
 	e.POST(prefij+"/category", handlers.Category_post)
 	e.GET(prefij+"/category", handlers.Category_get)
+	e.GET(prefij+"/category/:id", handlers.Category_get_by_id)
+	e.PUT(prefij+"/category/:id", handlers.Category_put)
+	e.DELETE(prefij+"/category/:id", handlers.Category_delete)
+
+	//Product routes
+	e.POST(prefij+"/product", handlers.Product_post)
+	e.GET(prefij+"/product", handlers.Product_get)
+	e.GET(prefij+"/products", handlers.Product_get_with_relation)
+	e.GET(prefij+"/product/:id", handlers.Product_get_by_id)
+	e.PUT(prefij+"/product/:id", handlers.Product_put)
+	e.DELETE(prefij+"/product/:id", handlers.Product_delete)
+
+	//Product picture routes
+	e.POST(prefij+"/product_picture/:id", handlers.ProductPicture_upload)
+	e.GET(prefij+"/product_picture/:id", handlers.ProductPicture_get)
+	e.DELETE(prefij+"/product_picture/:id", handlers.ProductPicture_delete)
+
+	//User routes
+	e.POST(prefij+"/user", handlers.Security_register)
+	e.POST(prefij+"/secure/login", handlers.Security_login)
+	e.POST(prefij+"/secure/protect", handlers.Security_protect)
 
 
 	//Apply cors

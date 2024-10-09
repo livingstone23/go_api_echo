@@ -25,3 +25,19 @@ type UserDto struct {
 	Password string `json:"password"`
 }
 
+type LoginDto struct {
+	Email string `json:"email"`
+	Password string `json:"password"`
+}
+
+type LoginAnswerDto struct {
+	Name string `json:"name"`
+	Token string `json:"token"`
+}
+
+type ProductPictureDto struct {
+	name string `json:"name"`
+	ProductID string `json:"product_id"`
+}
+
+

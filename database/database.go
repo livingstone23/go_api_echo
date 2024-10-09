@@ -16,8 +16,9 @@ var MondoDb = "echo_framework2"
 
 
 var CategoryCollection = ClientMongo.Database(MondoDb).Collection("category")
-
-
+var ProductCollection = ClientMongo.Database(MondoDb).Collection("product")
+var ProductPictureCollection = ClientMongo.Database(MondoDb).Collection("product_picture")
+var UserCollection = ClientMongo.Database(MondoDb).Collection("user")
 
 func ConnectDb() *mongo.Client {
 
